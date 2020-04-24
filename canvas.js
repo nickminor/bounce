@@ -22,6 +22,7 @@ var colorArray = [
   '#469380',
   '#4DA08B',
   '#3A7969',
+  '#FFFFFF',
 ];
 
 window.addEventListener('mousemove', function (event) {
