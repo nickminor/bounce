@@ -42,7 +42,7 @@ function Circle(x, y, dx, dy, radius) {
   this.dy = dy;
   this.radius = radius;
   this.color = colorArray[Math.floor(Math.random() * colorArray.length)]
-  this.minRadius = radius;
+  this.minRadius = .5;
 
   this.draw = function () {
     c.beginPath();
