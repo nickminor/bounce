@@ -12,11 +12,16 @@ var mouse = {
 var maxRadius = 30;
 
 var colorArray = [
-  '#99E8F0',
-  '#FFD65D',
-  '#FFC498',
-  '#FFBAD8',
-  '#FFA375',
+  // '#99E8F0',
+  // '#FFD65D',
+  // '#FFC498',
+  // '#FFBAD8',
+  // '#FFA375',
+  '#285348',
+  '#6BDFC2',
+  '#469380',
+  '#4DA08B',
+  '#3A7969',
 ];
 
 window.addEventListener('mousemove', function (event) {
@@ -74,10 +79,10 @@ function Circle(x, y, dx, dy, radius) {
 // var radius = 30;
 var circleArray = [];
 
-for (var i = 0; i < 2000; i++) {
+for (var i = 0; i < 4000; i++) {
   var radius = Math.random() * 3 + 1;
-  var x = Math.random() * (innerWidth - radius * 2) + radius;
-  var y = Math.random() * (innerHeight - radius * 2) + radius;
+  var x = Math.random() * (innerWidth - radius * 20) + radius;
+  var y = Math.random() * (innerHeight - radius * 20) + radius;
   var dx = (Math.random() - .5);
   var dy = (Math.random() - .5);
   circleArray.push(new Circle(x, y, dx, dy, radius));
